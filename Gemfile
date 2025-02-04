@@ -5,13 +5,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gemspec
 
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1'
 end
 
 group :test do
+  gem 'concurrent-ruby', '1.3.4'
+  gem 'rails', '~> 6'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
   gem 'fakefs', require: 'fakefs/safe'
+  gem 'sprockets-rails'
+  gem 'psych', '< 4'
 end
 
 group :development, :test do
