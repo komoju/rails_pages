@@ -1,0 +1,46 @@
+name: Ruby
+
+on: [push]
+
+jobs:
+  rspec:
+    runs-on: ubuntu-latest
+    name: Run rspec
+    permissions: write-all
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby-version:
+          - '3.2'
+          - '3.3'
+          - '3.4'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+    - name: Run tests
+      run: bundle exec rspec
+
+  rubocop:
+    runs-on: ubuntu-latest
+    name: Run rubocop
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Run RuboCop
+        run: bundle exec rubocop
