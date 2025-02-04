@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/degica/rails_pages#readme",
   "devDependencies": {
-    "typescript": "^4.5.2"
+    "typescript": "^5.7.3"
   },
   "dependencies": {
     "vue": "^3.1.0"
