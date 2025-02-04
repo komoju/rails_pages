@@ -20,7 +20,7 @@ end
 
 group :development, :test do
   gem 'pry-byebug'
-  gem 'webpacker', '~> 5.2.1'
+  gem 'webpacker', '~> 5.4.4'
 end
 
 # To use a debugger
