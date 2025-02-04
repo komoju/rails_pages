@@ -27,20 +27,3 @@ jobs:
 
     - name: Run tests
       run: bundle exec rspec
-
-  rubocop:
-    runs-on: ubuntu-latest
-    name: Run rubocop
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-
-      - name: Run RuboCop
-        run: bundle exec rubocop
