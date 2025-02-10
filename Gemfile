@@ -15,7 +15,7 @@ group :test do
   gem 'rails-controller-testing'
   gem 'fakefs', require: 'fakefs/safe'
   gem 'sprockets-rails'
-  gem 'psych', '< 4'
+  gem 'psych', '< 6'
 end
 
 group :development, :test do
