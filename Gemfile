@@ -9,7 +9,7 @@ group :development do
 end
 
 group :test do
-  gem 'concurrent-ruby', '1.3.4'
+  gem 'concurrent-ruby', '1.3.5'
   gem 'rails', '~> 6'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
