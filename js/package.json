@@ -1,26 +1,26 @@
 {
-  "name": "rails-pages",
-  "version": "0.2.0",
-  "description": "The JS half of the rails_pages ruby gem",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "build": "tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/degica/rails_pages.git"
-  },
-  "author": "Nigel Baillie <nigelbaillie@hey.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/degica/rails_pages/issues"
-  },
-  "homepage": "https://github.com/degica/rails_pages#readme",
-  "devDependencies": {
-    "typescript": "^5.7.3"
-  },
-  "dependencies": {
-    "vue": "^3.1.0"
-  }
+	"name": "rails-pages",
+	"version": "0.3.0",
+	"description": "The JS half of the rails_pages ruby gem",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/degica/rails_pages.git"
+	},
+	"author": "Nigel Baillie <nigelbaillie@hey.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/degica/rails_pages/issues"
+	},
+	"homepage": "https://github.com/degica/rails_pages#readme",
+	"devDependencies": {
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"vue": "^3.1.0"
+	}
 }
