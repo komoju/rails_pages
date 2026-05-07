@@ -114,7 +114,8 @@ export async function get(
 //
 export async function post(
   action: string,
-  params: Object
+  params: Object,
+  headers?: Record<string, string>
 ): Promise<Object> {
   // Rails generates meta tags with anti-CSRF information.
   const csrfParamMeta = document.getElementsByName('csrf-param')[0];
@@ -140,7 +141,8 @@ export async function post(
     credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json',
-      Accept: 'application/json'
+      Accept: 'application/json',
+      ...headers
     },
     body: JSON.stringify(params)
   });
